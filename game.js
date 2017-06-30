@@ -1,22 +1,20 @@
-
-
-var Game = function(name){
-	this.name = name
-	this.players = []
+var Game = function(name) {
+    this.name = name
+    this.players = []
 
 };
-	Game.prototype = {
-		addPlayer: function(player){
-			this.players.push(player);
-		},
+Game.prototype = {
+    addPlayer: function(player) {
+        this.players.push(player);
+    },
 
-		playersNum: function(){
-			return this.players.length;
-		},
+    playersNum: function() {
+        return this.players.length;
+    },
 
-		play: function(){
+    play: function() {
 
-		}
+    }
 };
 
 module.exports = Game;
