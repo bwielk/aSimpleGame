@@ -1,9 +1,16 @@
-var Player = require('./player');
+var Game = function(name){
+	this.name = name
+	this.players = []
 
-var Game = function(){
-
+};
 	Game.prototype = {
+		addPlayer: function(player){
+			this.players.push(player);
+		},
 
+		playersNum: function(){
+			return this.players.length;
 		}
-	}
-}
+};
+
+module.exports = Game;

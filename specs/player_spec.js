@@ -1,6 +1,7 @@
 var is = require('assert');
 var Player = require('../player');
 
+
 describe("PlayerTest", function(){
 	var player1;
 	var player2;
