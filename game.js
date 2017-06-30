@@ -1,7 +1,7 @@
 var Score = require('./score');
 
 var Game = function(name) {
-    this.name = name
+    this.name = name,
     this.players = []
 };
 
