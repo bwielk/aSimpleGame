@@ -1,3 +1,5 @@
+
+
 var Game = function(name){
 	this.name = name
 	this.players = []
@@ -10,6 +12,10 @@ var Game = function(name){
 
 		playersNum: function(){
 			return this.players.length;
+		},
+
+		play: function(){
+
 		}
 };
 

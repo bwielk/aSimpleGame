@@ -9,7 +9,7 @@ describe("GameTest", function(){
 
 	beforeEach("Setup", function(){
 		player1 = new Player("Jeff", 20, 170);
-		player2 = new Player("Paul", 21, 180);
+		player2 = new Player("Paul", 30, 180);
 		game1 = new Game("xxx");
 	}),
 
@@ -21,6 +21,10 @@ describe("GameTest", function(){
 		game1.addPlayer(player1);
 		game1.addPlayer(player2);
 		is.equal(2, game1.playersNum());
+	}),
+
+	it("should be able to find the winner", function(){
+		is.equal("Paul wins!", game1.play());
 	})
 
 })
