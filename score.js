@@ -1,8 +1,8 @@
 var Player = require('./player');
 
 var Score = function() {
-	this.value = 0,
-	this.name = ""
+	this.value = 0;
+	this.name = "";
 };
 
 Score.prototype = {
